@@ -230,8 +230,8 @@ const DataBot = {
                 apikey: '612a34f5818ec4da3ef2a8b38d87d21c1c567',
             }
         },
-        ip: '20.213.56.186',
-        pwroot: '@#jgnkasihpwmarvel#@#',
+        ip: '20.213.144.241',
+        pwroot: '@@blackfire@##',
         grup: ['120363021805510294@g.us']
     },
     server2: {
@@ -262,7 +262,7 @@ const DataBot = {
         },
         ip: '20.40.99.222',
         pwroot: '@@server12##',
-        grup: ['']
+        grup: ['120363040355933180@g.us']
     },
     server4: {
         nama: '',

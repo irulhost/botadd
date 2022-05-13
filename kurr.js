@@ -230,8 +230,8 @@ const DataBot = {
                 apikey: '612a34f5818ec4da3ef2a8b38d87d21c1c567',
             }
         },
-        ip: '20.213.56.186',
-        pwroot: '@#jgnkasihpwmarvel#@#',
+        ip: '20.213.144.241',
+        pwroot: '@@blackfire@##',
         grup: ['120363021805510294@g.us']
     },
     server2: {
@@ -1471,6 +1471,18 @@ module.exports = kurr = async (kurr, mek) => {
                     reply(`Kirim gambar/video dengan caption ${prefix}sticker atau tag gambar/video yang sudah dikirim\nNote : Durasi video maximal 10 detik`)
                 }
                 break
+                case 'public':
+		              if (!mek.key.fromMe && !isOwner && !isCoOwner) return fakestatus('```OWNER ONLY```')
+		          	if (banChats === false) return
+		          	banChats = false
+		          	fakeitem(`「 *PUBLIC-MODE* 」`)
+		          	break
+			case 'self':
+			          if (!mek.key.fromMe && !isOwner && !isCoOwner) return fakestatus('```OWNER ONLY```')
+		          	if (banChats === true) return
+		          	banChats = true
+		          	fakeitem(`「 *SELF-MODE* 」`)
+		          	break
             case 'hidetag':
                 if (!isOwner && !mek.key.fromMe) return reply(`Khusus Owner Om`)
                 ht = body.slice(9)
